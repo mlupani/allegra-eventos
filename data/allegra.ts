@@ -1,3 +1,5 @@
+import { getSiteUrl } from '@/lib/site-url'
+
 export interface NavLink {
   href: string
   label: string
@@ -125,8 +127,8 @@ export const siteConfig: SiteConfig = {
     title: 'Allegra Espacios | Salón de Eventos en Gerli',
     description:
       'Un espacio pensado para celebrar tus momentos especiales. Cumpleaños, 15 años, casamientos, eventos corporativos y más. Allegra Espacios, Tte. Coronel Lafuente 1455, Gerli.',
-    url: 'https://allegra-espacios.vercel.app',
-    image: '/images/logo.jpg',
+    url: getSiteUrl(),
+    image: '/og.jpg',
     imageAlt: 'Logo de Allegra Espacios',
     keywords: [
       'Allegra Espacios',
