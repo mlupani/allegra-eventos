@@ -9,7 +9,7 @@ import { siteConfig } from '@/data/allegra'
 
 export function Hero () {
   return (
-    <section id='inicio' className='relative isolate flex min-h-[100dvh] items-end overflow-hidden bg-deep'>
+    <section id='inicio' className='relative isolate flex min-h-svh items-end overflow-hidden bg-deep'>
       <Image
         src={heroMobile}
         alt={siteConfig.hero.imageAlt}
@@ -30,7 +30,7 @@ export function Hero () {
       <div className='pointer-events-none absolute inset-0 bg-gradient-to-b from-deep/50 via-deep/35 to-deep/55 md:hidden' />
       <div className='absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-deep/70 to-transparent md:h-36 md:from-deep/55' />
 
-      <Container className='relative z-10 flex min-h-[100dvh] w-full flex-col items-center text-center max-md:absolute max-md:inset-0 max-md:pt-[5.25rem] md:min-h-0 md:pb-20 md:pt-32'>
+      <Container className='relative z-10 flex min-h-svh w-full flex-col items-center text-center max-md:absolute max-md:inset-0 max-md:pt-[5.25rem] md:min-h-0 md:pb-20 md:pt-32'>
         <div className='flex w-full flex-1 flex-col items-center justify-center text-ivory max-md:-translate-y-[6%] md:contents'>
           <div className='md:hidden'>
             <p className='font-script text-[4.35rem] leading-none drop-shadow-[0_8px_24px_rgba(4,42,51,0.55)]'>

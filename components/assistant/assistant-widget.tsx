@@ -130,44 +130,33 @@ export function AssistantWidget () {
   }
 
   return (
-    <div className='pointer-events-none fixed inset-0 z-50 flex items-end justify-end'>
-      <div
-        className={cn(
-          'pointer-events-auto absolute inset-0 bg-deep/40 transition-opacity duration-300 md:hidden',
-          isOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
-        )}
-        onClick={close}
-        aria-hidden='true'
-      />
-
-      <div className='pointer-events-auto p-0 md:p-6'>
-        <div
-          className={cn(
-            'origin-bottom-right transition-all duration-300 ease-out',
-            isOpen
-              ? 'visible scale-100 opacity-100'
-              : 'invisible scale-95 opacity-0'
-          )}
-        >
-          {isOpen
-            ? (
+    <>
+      {isOpen
+        ? (
+          <div className='pointer-events-none fixed inset-0 z-50 flex items-end justify-end'>
+            <div
+              className='pointer-events-auto absolute inset-0 bg-deep/40 md:hidden'
+              onClick={close}
+              aria-hidden='true'
+            />
+            <div className='pointer-events-auto p-0 md:p-6'>
               <ChatPanel
                 messages={messages}
                 isTyping={isTyping}
                 onSend={(text) => { fireAndForget(sendToAgent(text)) }}
                 onAction={handleAction}
                 onClose={close}
-                className='h-[100dvh] w-screen rounded-none md:h-[min(640px,calc(100dvh-5.5rem))] md:w-[400px] md:rounded-[1.6rem]'
+                className='h-svh w-screen rounded-none md:h-[min(640px,calc(100svh-5.5rem))] md:w-[400px] md:rounded-[1.6rem]'
               />
-              )
-            : null}
-        </div>
-      </div>
+            </div>
+          </div>
+          )
+        : null}
 
       <div
         className={cn(
-          'pointer-events-auto absolute right-5 bottom-5 z-10 flex items-end gap-3 md:right-6 md:bottom-6',
-          isOpen && 'max-md:opacity-0'
+          'pointer-events-auto fixed right-5 bottom-5 z-50 flex items-end gap-3 md:right-6 md:bottom-6',
+          isOpen && 'max-md:pointer-events-none max-md:opacity-0'
         )}
       >
         {isOpen
@@ -192,6 +181,6 @@ export function AssistantWidget () {
           <MessageCircle className='h-6 w-6' aria-hidden='true' />
         </button>
       </div>
-    </div>
+    </>
   )
 }
