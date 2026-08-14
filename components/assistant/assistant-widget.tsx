@@ -173,7 +173,7 @@ export function AssistantWidget () {
         {isOpen
           ? null
           : (
-            <p className='mb-1 max-w-[11.5rem] rounded-2xl rounded-br-md bg-ivory px-3.5 py-2.5 text-sm leading-snug text-ink shadow-[0_12px_30px_-12px_rgba(4,42,51,0.45)]'>
+            <p className='mb-1 hidden max-w-[11.5rem] rounded-2xl rounded-br-md bg-ivory px-3.5 py-2.5 text-sm leading-snug text-ink shadow-[0_12px_30px_-12px_rgba(4,42,51,0.45)] md:block'>
               ¡Hola! ¿Consultamos disponibilidad para tu evento?
             </p>
             )}

@@ -56,6 +56,7 @@ export interface SiteConfig {
   badge: string
   hero: {
     image: string
+    imageMobile: string
     imageAlt: string
   }
   about: {
@@ -111,6 +112,7 @@ export const siteConfig: SiteConfig = {
   badge: 'Eventos sociales y corporativos',
   hero: {
     image: '/images/hero.png',
+    imageMobile: '/images/hero_mobile.png',
     imageAlt: 'Allegra Espacios, el salón ambientado para celebrar momentos especiales'
   },
   about: {
