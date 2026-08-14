@@ -28,7 +28,7 @@ export function Hero () {
       <div className='absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-deep/40 to-transparent' />
       <div className='absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-deep/70 to-transparent md:h-36 md:from-deep/55' />
 
-      <Container className='relative z-10 flex w-full flex-col items-center text-center max-md:absolute max-md:inset-x-0 max-md:bottom-0 max-md:pb-[max(0.75rem,env(safe-area-inset-bottom))] md:pb-20 md:pt-32'>
+      <Container className='relative z-10 flex w-full flex-col items-center text-center max-md:absolute max-md:inset-x-0 max-md:bottom-[18%] md:pb-20 md:pt-32'>
         <h1 className='sr-only'>{siteConfig.headline}</h1>
         <div className='flex w-full flex-col items-center gap-3 sm:max-w-lg sm:flex-row sm:justify-center'>
           <OpenAssistantButton
