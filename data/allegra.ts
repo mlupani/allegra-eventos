@@ -58,6 +58,9 @@ export interface SiteConfig {
     image: string
     imageMobile: string
     imageAlt: string
+    headlineLead: string
+    headlineAccent: string
+    occasions: string[]
   }
   about: {
     kicker: string
@@ -113,7 +116,14 @@ export const siteConfig: SiteConfig = {
   hero: {
     image: '/images/hero.png',
     imageMobile: '/images/hero_mobile.png',
-    imageAlt: 'Allegra Espacios, el salón ambientado para celebrar momentos especiales'
+    imageAlt: 'Allegra Espacios, el salón ambientado para celebrar momentos especiales',
+    headlineLead: 'El espacio donde tus momentos se convierten',
+    headlineAccent: 'en recuerdos',
+    occasions: [
+      'Cumpleaños • 15 años • Casamientos',
+      'Eventos corporativos',
+      'Y momentos especiales'
+    ]
   },
   about: {
     kicker: 'Sobre Allegra',
