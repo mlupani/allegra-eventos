@@ -29,10 +29,11 @@ const script = GreatVibes({
 })
 
 const ogImage = {
-  url: '/opengraph-image',
-  width: 1200,
-  height: 630,
-  alt: siteConfig.seo.imageAlt
+  url: siteConfig.logo,
+  width: 825,
+  height: 825,
+  type: 'image/jpeg',
+  alt: siteConfig.name
 }
 
 export const metadata: Metadata = {
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
     images: [ogImage]
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: siteConfig.seo.title,
     description: siteConfig.seo.description,
     images: [ogImage]
@@ -90,7 +91,10 @@ const jsonLd = {
   name: siteConfig.name,
   description: siteConfig.seo.description,
   url: siteConfig.seo.url,
-  image: `${siteConfig.seo.url}${siteConfig.seo.image}`,
+  image: [
+    `${siteConfig.seo.url}${siteConfig.logo}`,
+    `${siteConfig.seo.url}${siteConfig.hero.image}`
+  ],
   telephone: `+${siteConfig.whatsapp.phone}`,
   sameAs: [
     siteConfig.social.instagram,

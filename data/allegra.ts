@@ -126,8 +126,8 @@ export const siteConfig: SiteConfig = {
     description:
       'Un espacio pensado para celebrar tus momentos especiales. Cumpleaños, 15 años, casamientos, eventos corporativos y más. Allegra Espacios, Tte. Coronel Lafuente 1455, Gerli.',
     url: 'https://allegra-espacios.vercel.app',
-    image: '/images/hero.png',
-    imageAlt: 'Allegra Espacios, salón de eventos en Gerli',
+    image: '/images/logo.jpg',
+    imageAlt: 'Logo de Allegra Espacios',
     keywords: [
       'Allegra Espacios',
       'salón de eventos',
